@@ -1,3 +1,4 @@
+DELIMITER $$
 CREATE PROCEDURE second_times(counts INT)
 BEGIN
 	CASE
@@ -12,5 +13,5 @@ BEGIN
                              MOD(MOD(MOD(counts, 86400),3600),60), 'seconds') AS Result;
     END CASE;
 END//
-
+DELIMITER;
 CALL second_times(12378);  

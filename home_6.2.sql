@@ -1,3 +1,4 @@
+DELIMITER $$
 CREATE PROCEDURE numbers()
 BEGIN
     DECLARE n INT default 0;
@@ -11,5 +12,5 @@ BEGIN
 
 SELECT * FROM nums;
 END $$
-
+DELIMITER;
 CALL numbers();
