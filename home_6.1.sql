@@ -13,5 +13,5 @@ BEGIN
                              MOD(MOD(MOD(counts, 86400),3600),60), 'seconds') AS Result;
     END CASE;
 END//
-DELIMITER;
+DELIMITER ;
 CALL second_times(12378);  

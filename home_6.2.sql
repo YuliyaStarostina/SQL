@@ -12,5 +12,5 @@ BEGIN
 
 SELECT * FROM nums;
 END $$
-DELIMITER;
+DELIMITER ;
 CALL numbers();
